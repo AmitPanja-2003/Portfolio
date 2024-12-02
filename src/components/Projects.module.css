@@ -1,0 +1,84 @@
+.projectsContainer {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #ece7e7;
+  }
+  
+  .cardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .projectName {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 1rem 0;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  
+  .liveButton,
+  .githubButton {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .liveButton {
+    background-color: #1abc9c;
+  }
+  
+  .liveButton:hover {
+    background-color: #16a085;
+  }
+  
+  .githubButton {
+    background-color: #34495e;
+  }
+  
+  .githubButton:hover {
+    background-color: #2c3e50;
+  }
+  
