@@ -10,8 +10,7 @@ import Education from './components/Education';
 
 const App = () => {
   return (
-    
-      <div>
+    <div>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home/>} />

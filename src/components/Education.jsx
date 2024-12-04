@@ -5,7 +5,7 @@ const educationDetails = [
   {
     id: 1,
     degree: "Bachelor of Science in Computer Science",
-    institution: "XYZ University",
+    institution: "Chitkara University",
     time: "2018 - 2022",
   },
   {
