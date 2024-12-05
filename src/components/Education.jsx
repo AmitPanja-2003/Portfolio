@@ -1,4 +1,4 @@
-import React from "react";
+
 import styles from "./Education.module.css";
 
 const educationDetails = [
@@ -10,14 +10,14 @@ const educationDetails = [
   },
   {
     id: 2,
-    degree: "High School Diploma",
+    degree: "School",
     institution: "ABC High School",
     time: "2016 - 2018",
   },
   {
     id: 3,
     degree: "Secondary School Certificate",
-    institution: "DEF Secondary School",
+    institution: "Balpai Pasupati Surendra Vidyapith(H.S)",
     time: "2014 - 2016",
   },
 ];

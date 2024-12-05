@@ -14,7 +14,7 @@ const About = () => {
       <div className={styles.textSection}>
         <h2>About Me</h2>
         <p>
-          Hello! I'm [Your Name], a passionate [Your Profession, e.g., Web Developer]
+          Hello! I'm [Your Name write here], a passionate [Your Profession, e.g., Web Developer]
           with a knack for creating beautiful, functional, and user-friendly web
           applications. With experience in [briefly mention skills or expertise],
           I thrive on turning ideas into reality.
