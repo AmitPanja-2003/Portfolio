@@ -9,7 +9,7 @@ const Contact = () => {
         <form className={styles.contactForm}>
           <div className={styles.formGroup}>
             <label htmlFor="name">Name</label>
-            <input type="text" id="name" placeholder="Enter your name" />
+            <input type="text" id=" name" placeholder="Enter your name" />
           </div>
           <div className={styles.formGroup}>
             <label htmlFor="email">Email</label>
