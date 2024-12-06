@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <p className={styles.text}>© 2024 Amit Panja. All rights reserved.</p>
+        <p className={styles.text}>© 2024 Amit Panja. All rights.</p>
         <div className={styles.socialLinks}>
           <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
           <FaGithub className={styles.icon} />
