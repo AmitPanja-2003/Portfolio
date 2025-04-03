@@ -1,4 +1,5 @@
 import  { useState } from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./navbar.module.css";
 
 const Navbar = () => {
@@ -10,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>MyWebsite</div>
+      <div className={styles.logo}>AMIT</div>
       <div className={styles.navToggle} onClick={toggleMenu}>
         ☰
       </div>
@@ -18,22 +19,19 @@ const Navbar = () => {
         className={`${styles.navLinks} ${isMenuOpen ? styles.mobileMenu : ""}`}
       >
         <li>
-          <a href="/">Home</a>
+          <NavLink  to="/">Home</NavLink>
         </li>
         <li>
-          <a href="/about">About</a>
+          <NavLink to="/about">About</NavLink>
         </li>
         <li>
-          <a href="/education">Education</a>
+          <NavLink to="/education">Education</NavLink>
         </li>
         <li>
-          <a href="/services">Projects</a>
+          <NavLink to="/services">Projects</NavLink>
         </li>
         <li>
-          <a href="/services">Projects</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
     </nav>
