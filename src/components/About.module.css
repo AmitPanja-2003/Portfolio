@@ -1,80 +1,149 @@
+/* About Container */
 .aboutContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 50px); /* Larger height for more emphasis */
-    background: linear-gradient(135deg, #2c3e50, #3498db);
-    padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  padding: 2rem;
+  gap: 2rem; /* Space between image and text */
+}
+
+/* Image Section */
+.imageSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  border: 6px solid #1abc9c;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profileImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Section */
+.textSection {
+  flex: 2;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  color: white;
+  text-align: center;
+}
+
+/* Headings */
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+/* Button */
+.knowMoreButton {
+  padding: 0.8rem 2rem;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.knowMoreButton:hover {
+  background-color: #16a085;
+  transform: translateY(-3px);
+}
+
+.knowMoreButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .aboutContainer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 4rem 1rem;
   }
-  
+
   .imageSection {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -10px; /* Subtle upward adjustment */
-    margin-left: -20px;
+    margin-bottom: 2rem;
   }
-  
+
   .profileImage {
-    width: 350px; /* Increased size for larger image */
-    height: 350px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
-    border: 6px solid #1abc9c; /* Thicker border for prominence */
+    width: 250px;
+    height: 250px;
   }
-  
+
   .textSection {
-    flex: 3;
-    background: linear-gradient(135deg, #2c3e50, #3498db);
-    padding: 3rem 2.5rem;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
-    max-width: 700px; 
-    margin-left: 1rem;
+    max-width: 90%;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .profileImage {
+    width: 220px;
+    height: 220px;
+  }
+
   h2 {
-    color: #d6e2ee;
-    font-size: 3rem; /* Larger heading size */
-    margin-bottom: 1rem;
-    font-weight: 700;
-    text-align: center;
+    font-size: 2rem;
   }
-  
+
   p {
-    color: white;
-    line-height: 1.8;
-    font-size: 1.2rem; /* Increased text size */
-    text-align: justify;
-    margin-bottom: 1.5rem;
+    font-size: 1rem;
   }
-  
+
   .knowMoreButton {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background-color: #1abc9c;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.2rem; 
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 0 auto;
-    display: block;
-    width: 200px; /* Slightly wider button */
-    text-align: center;
+    font-size: 1rem;
+    width: 180px;
   }
-  
-  .knowMoreButton:hover {
-    background-color: #16a085;
-    transform: translateY(-3px);
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
   }
-  
-  .knowMoreButton:active {
-    transform: translateY(0);
+
+  p {
+    font-size: 0.9rem;
   }
-  
+
+  .profileImage {
+    width: 180px;
+    height: 180px;
+  }
+
+  .knowMoreButton {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+    width: 160px;
+  }
+}

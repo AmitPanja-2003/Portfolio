@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.logo}>AMIT</div>
       <div className={styles.navToggle} onClick={toggleMenu}>
-        ☰
+        {isMenuOpen?"✖":"☰"}
       </div>
       <ul
         className={`${styles.navLinks} ${isMenuOpen ? styles.mobileMenu : ""}`}
