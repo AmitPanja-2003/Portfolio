@@ -26,7 +26,7 @@ const projects = [
   {
     id: 4,
     image: "https://res.cloudinary.com/dw6wucdmw/image/upload/v1743683135/Screenshot_2025-04-03_174853_o5fw2l.png",
-    name: "LinkUp",
+    name: "QuickTalk",
     liveLink: "https://quicktalk-u91b.onrender.com",
     githubLink: "https://github.com/AmitPanja-2003/QuickTalk",
   },
